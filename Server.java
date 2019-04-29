@@ -71,7 +71,7 @@ class ABC extends Thread
             Class.forName("oracle.jdbc.driver.OracleDriver");
             String url = "jdbc:oracle:thin:@localhost:1521:xe";
             String user = "system";
-            String p="karansinha";
+            String p="system";
             try
             {
                 con=DriverManager.getConnection(url,user,p);
@@ -99,7 +99,7 @@ class ABC extends Thread
                     }
                 }
                 if(flag==0)
-                    dos.writeUTF("Sorry! I am in development phase\nAfter Sometime I will surely answer this");
+                    dos.writeUTF("Sorry! I am in development phase\nAfter sometime, I will surely answer this");
                 else
                     dos.writeUTF(out);
                 
